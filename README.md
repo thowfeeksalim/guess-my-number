@@ -1,5 +1,5 @@
-![Banner](<a href=#><img src="snake.svg"></a>
-)
+<a href=#><img src="snake.svg"></a>
+
 <br>
 <br>
 <br>
