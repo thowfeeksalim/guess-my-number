@@ -69,6 +69,16 @@ document.querySelector('.check').addEventListener('click', function () {
           
         });
         
+         if(count==1){
+    
+            if(secretnumber<=25){
+                let start = 1;
+                let end = 25
+                showhint(start,end)
+            }
+           
+            
+        }
     
         if(count==2){
     
@@ -161,7 +171,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = score;
 
     }
-    else{
+    else if(count==5){
       document.querySelector('.message').textContent = 'You lost';
       document.querySelector('.score').textContent = '0';
       document.querySelector('main').style.backgroundColor='red';
