@@ -58,5 +58,5 @@
   ·
   <a href="https://github.com/thowfeeksalim/GUESS-MY-NUMBER/issues/new/choose">Request Feature</a>
 </p>
-![Banner](https://media.giphy.com/headers/GitHub/w8ZJLtJbmuph.gif)
+
                                                                        
