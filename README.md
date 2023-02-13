@@ -1,8 +1,4 @@
 <a href=#><img src="snake.svg"></a>
-
-<br>
-<br>
-<br>
 <br>
 <h1 align="center"> <strong> 😎GUESS-MY-NUMBER😎 </strong> </h1> 
 <h2 align="center"><a href="https://thowfeeksalim.github.io/guess-my-number">Link</a></h2>
