@@ -48,7 +48,7 @@
  <br>
 </p> 
 <p align="center">
-  <a href="https://thowfeeksalim.github.io/GUESS-MY-NUMBER/Guess%20the%20Number/game.html" target="blank">View Demo</a>
+  <a href="https://thowfeeksalim.github.io/guess-my-number" target="blank">View Demo</a>
   ·
   <a href="https://github.com/thowfeeksalim/GUESS-MY-NUMBER/issues/new/choose">Report Bug</a>
   ·
