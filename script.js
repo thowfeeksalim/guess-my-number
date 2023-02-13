@@ -1,66 +1,181 @@
 'use strict';
-
-
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 20;
+let score = 25;
+var secretnumber = Math.trunc(Math.random() * 25) + 1;
 let highscore = 0;
+// document.querySelector('.number').textContent = secretnumber;    
 
-const displayMessage = function (message) {
-  document.querySelector('.message').textContent = message;
-};
+let hint=document.querySelector('.message')
+let btn = document.querySelector('.check')
+let count =1;
+
+
+document.querySelector('.again').addEventListener('click', function () {
+  secretnumber = Math.trunc(Math.random() * 25) + 1;
+  // document.querySelector('.number').textContent = secretnumber;
+  document.querySelector('.guess').value='';
+  
+
+  score = 25;
+  document.querySelector('.score').textContent = score;
+  document.querySelector('main').style.backgroundColor='black';
+  document.querySelector('.message').textContent = 'start Gussing';
+
+  //edit changed as comment
+  // document.querySelector('.number').textContent = '?';             3333
+
+});
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
+  //edited changed as cmnt
   console.log(guess, typeof guess);
 
-  // When there is no input
   if (!guess) {
-    // document.querySelector('.message').textContent = '⛔️ No number!';
-    displayMessage('⛔️ No number!');
+    document.querySelector('.message').textContent = 'No number';
+    count=0;
+    console.log(count)
+  } 
 
-    // When player wins
-  } else if (guess === secretNumber) {
-    // document.querySelector('.message').textContent = '🎉 Correct Number!';
-    displayMessage('🎉 Correct Number!');
-    document.querySelector('.number').textContent = secretNumber;
-
-    document.querySelector('body').style.backgroundColor = '#60b347';
-    document.querySelector('.number').style.width = '30rem';
-
-    if (score > highscore) {
+  else if (guess === secretnumber) {
+    document.querySelector('.message').textContent = '🎉Correct number';
+    document.querySelector('main').style.backgroundColor='#60b347';
+    document.querySelector('.number').style.width='20rem';
+    document.querySelector('.number').textContent = secretnumber;
+    if (highscore<score){
       highscore = score;
-      document.querySelector('.highscore').textContent = highscore;
+      document.querySelector('.highscore').textContent=highscore;
     }
+  } 
+  else if (guess !== secretnumber) {
+    score--;
+    //hint item
+    
 
-    // When guess is wrong
-  } else if (guess !== secretNumber) {
-    if (score > 1) {
+
+
+    if(score>0){
       // document.querySelector('.message').textContent =
-      // guess > secretNumber ? '📈 Too high!' : '📉 Too low!';
-      displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
-      score--;
-      document.querySelector('.score').textContent = score;
-    } else {
-      // document.querySelector('.message').textContent = '💥 You lost the game!';
-      displayMessage('💥 You lost the game!');
-      document.querySelector('.score').textContent = 0;
-    }
-  }
+      // guess > secretnumber? 'too high': 'too low';
 
+      btn.onclick = function () {
+
+        function showhint(start,end){
+            hint.textContent=`between ${start} and ${end}`
+        }
+    
+        count++;
+        document.querySelector('.again').addEventListener('click', function () {
+          count=0;
+          
+        });
+        
+    
+        if(count==2){
+    
+            if(secretnumber<=10){
+                let start = Math.trunc(Math.random()*secretnumber)+1;
+                let end = start+14;
+                showhint(start,end)
+            }
+            else if(secretnumber<=15 && secretnumber>10){
+                // let diff = (secretnumber+15)-25;
+                // let s = secretnumber-diff;
+                let start =  Math.trunc(Math.random()*10)+1;
+                let end= start+14;
+                showhint(start,end)
+            }
+            else{
+                // let diff = (secretnumber+15)-25
+                // let s = secretnumber-diff
+                let diff2= (secretnumber-15)+1
+                let start = Math.floor(Math.random() * (11 - diff2+1 )) + diff2;
+                let end= start+14; 
+                showhint(start,end)
+            }
+            
+        }
+        else if(count==3){
+            if(secretnumber<=10){
+                let start = Math.trunc(Math.random()*secretnumber)+1;
+                let end = start+9;
+                showhint(start,end)
+    
+            }
+            else if(secretnumber<=15 && secretnumber>=11){
+                let diff = (secretnumber-10)+1
+                let start = Math.trunc(Math.random()*diff)+1;
+                let end= start+9
+                showhint(start,end)
+    
+            }
+            else{
+                let diff = (secretnumber-10)+1
+                // max =15 min=diff
+                let start= Math.floor(Math.random() * (15 - diff + 1)) + diff;
+                let end=start+9
+                showhint(start,end)
+    
+    
+    
+            }
+        }
+        else if(count==4){
+            if(secretnumber<=5 && secretnumber>=1){
+                let start = Math.trunc(Math.random()*secretnumber)+1;
+                let end=start+4
+                showhint(start,end)
+            }
+            else if(secretnumber<=10 && secretnumber>=6){
+                let diff = (secretnumber-5)+1;
+                let start= Math.floor(Math.random() * (secretnumber - diff + 1)) + diff;
+                let end=start+4;
+                showhint(start,end)
+    
+            }
+            else if(secretnumber<=15 && secretnumber>=11){
+                let diff = (secretnumber-5)+1;
+                let start= Math.floor(Math.random() * (secretnumber - diff + 1)) + diff;
+                let end=start+4;
+                showhint(start,end)
+    
+            }
+            else if(secretnumber<=20 && secretnumber>=16){
+                let diff = (secretnumber-5)+1;
+                let start= Math.floor(Math.random() * (secretnumber - diff + 1)) + diff;
+                let end=start+4;
+                showhint(start,end)
+    
+            }
+            else{
+                let diff = (secretnumber-5)+1;
+                let start= Math.floor(Math.random() * (21 - diff + 1)) + diff;  
+                let end=start+4;
+                showhint(start,end)
+            }
+        }
+    
+    
+    }
+
+
+      document.querySelector('.score').textContent = score;
+
+    }
+    else{
+      document.querySelector('.message').textContent = 'You lost';
+      document.querySelector('.score').textContent = '0';
+      document.querySelector('main').style.backgroundColor='red';
+
+      
+    }
+
+  }
+  
   
 });
 
-document.querySelector('.again').addEventListener('click', function () {
-  score = 20;
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
+let m=document.querySelector('.check')
+console.log(m);
 
-  // document.querySelector('.message').textContent = 'Start guessing...';
-  displayMessage('Start guessing...');
-  document.querySelector('.score').textContent = score;
-  document.querySelector('.number').textContent = '?';
-  document.querySelector('.guess').value = '';
-
-  document.querySelector('body').style.backgroundColor = '#222';
-  document.querySelector('.number').style.width = '15rem';
-});
+var timesClicked = 0;
 
