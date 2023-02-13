@@ -1,7 +1,7 @@
 <a href=#><img src="snake.svg"></a>
 <br>
 <h1 align="center"> <strong> 😎GUESS-MY-NUMBER😎 </strong> </h1> 
-<h2 align="center"><a href="https://thowfeeksalim.github.io/guess-my-number">Link</a></h2>
+<h1 align="center"><a href="https://thowfeeksalim.github.io/guess-my-number">Link</a></h1>
 <p align="center">
 𝚃𝚑𝚒𝚜 𝚒𝚜 𝚊 D𝚎𝚖𝚘 G𝚊𝚖𝚎🎮 𝚒𝚖𝚙𝚕𝚎𝚖𝚎𝚗𝚝𝚎𝚍 𝚞𝚜𝚒𝚗𝚐 𝙷𝚃𝙼𝙻 , 𝙲𝚂𝚂 , 𝙹𝙰𝚅𝙰𝚂𝙲𝚁𝙸𝙿𝚃  ( 𝐁𝐄𝐆𝐈𝐍𝐍𝐄𝐑 𝐅𝐑𝐈𝐄𝐍𝐃𝐋𝐘 𝐏𝐑𝐎𝐉𝐄𝐂𝐓🧒)
 </p>
