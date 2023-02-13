@@ -178,4 +178,3 @@ let m=document.querySelector('.check')
 console.log(m);
 
 var timesClicked = 0;
-
