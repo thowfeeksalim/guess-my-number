@@ -12,7 +12,7 @@
                                                           
                                                            
                                                                   
-                                            You have to guess a number between 1 to 20 😎
+                                            You have to guess a number between 1 to 25 😎
                                                               |
                                                               𝕍
                                        If your PREDICTED NUMBER is equal to the SECRET NUMBER 🔐
@@ -22,7 +22,7 @@
                                                                            
                                                              Ru̳l̳e̳s̳⚖️
                                                                     
-                                       1.  You will be given 20 chances (to predict)
+                                       1.  You will be given 25 chances (to predict)
                                        2.  On every wrong prediction your score will decrease by 1.
                                                                
                                                              HINTS🗝️
@@ -30,7 +30,7 @@
                                        for example :-  messsage displayed ( 𝙏𝙤𝙤 𝙝𝙞𝙜𝙝📈 )
                                                                    
                                        =>  𝑒𝓃𝓉𝑒𝓇 𝒶 𝓈𝓂𝒶𝓁𝓁𝑒𝓇 𝓃𝓊𝓂𝒷𝑒𝓇 𝓉𝒽𝒶𝓃 𝓉𝒽𝑒 𝓁𝒶𝓈𝓉 𝑜𝓃𝑒
-                                            (𝘋𝘰𝘯'𝘵 𝘧𝘰𝘳𝘨𝘦𝘵 𝘵𝘩𝘦 𝘳𝘢𝘯𝘨𝘦 𝘰𝘧 𝘯𝘶𝘮𝘣𝘦𝘳𝘴 𝘪𝘴 1 𝘵𝘰 20) 
+                                            (𝘋𝘰𝘯'𝘵 𝘧𝘰𝘳𝘨𝘦𝘵 𝘵𝘩𝘦 𝘳𝘢𝘯𝘨𝘦 𝘰𝘧 𝘯𝘶𝘮𝘣𝘦𝘳𝘴 𝘪𝘴 1 𝘵𝘰 25) 
 <p align="center">                   
 <a href="https://github.com/thowfeeksalim/GUESS-MY-NUMBER/fork" target="blank">            
 <img src="https://img.shields.io/github/forks/thowfeeksalim/GUESS-MY-NUMBER?style=flat-square" alt="Guess My Number"/>
